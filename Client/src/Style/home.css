@@ -1,0 +1,249 @@
+*{
+  font-family:"Poppins" !important;
+  box-sizing: border-box;
+}
+
+.top-part{
+  height:480px;
+  width:100%;
+  background:0% 55%;
+  background-image:linear-gradient(180deg, #9d0e0e00 0%, #4f0707a4 100%) ,url("../../public/Images/bg.png");
+  background-size:cover;
+  background-position: center;
+  position: relative;
+}
+
+.navigation-bar{
+  display:flex;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  gap: 10px;
+}
+
+.middle-part{
+  padding-top:5rem !important;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.log-in{
+  margin-right:1rem;
+  color:white;
+  margin-top:10px;
+  text-decoration:none;
+  background:transparent;
+  border:none;
+}
+
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.create-account{
+  height:40px;
+  text-decoration: none;
+  color:white;
+  padding:6px 10px 1px 10px;
+  border:1px solid white;
+  border-radius:3px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.search-box{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:1rem;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo-div{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.logo{
+  font-size:70px;
+  padding:15px !important;
+  background-color:white;
+  width:115px;
+  border-radius: 50%;
+  color:#EB2929;
+  text-align: center;
+}
+
+.find-the{
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  padding: 20px 15px 15px;
+  font-size:36px;
+  color:#FFFFFF;
+}
+
+#location{
+  padding:14px 45px 14px 23px;
+  color:#636F88;
+  width: 100%;
+  max-width: 300px;
+}
+
+.location-place{
+  color:#636F88 !important;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.search-glass{
+  position:relative;
+  left:2rem;
+  color:#74819E;
+  height:17px;
+  width:17px;
+}
+
+.search-restaurants{
+  padding:14px 40px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Middle Part */
+
+.between{
+  padding: 3rem 20px;
+  text-align: center;
+}
+
+/* Cards */
+.cards-group{
+  margin:2rem auto !important;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.card{
+  transition: transform 0.4s;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 !important;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .top-part {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .navigation-bar {
+    position: relative;
+    justify-content: center;
+    right: auto;
+    padding: 10px;
+  }
+
+  .middle-part {
+    padding-top: 2rem !important;
+  }
+
+  .logo {
+    font-size: 50px;
+    width: 90px;
+  }
+
+  .find-the {
+    font-size: 28px;
+    padding: 15px 10px;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #location, .search-restaurants {
+    max-width: 100%;
+  }
+
+  .between {
+    padding: 2rem 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top-part {
+    min-height: 350px;
+  }
+
+  .logo {
+    font-size: 40px;
+    width: 80px;
+  }
+
+  .find-the {
+    font-size: 24px;
+  }
+
+  .navigation-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .create-account {
+    width: 100%;
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,28 @@
+Home Page: 
+-> get Location 
+-> get RestaurantByLocation
+-> post Login 
+-> post Signup
+-> get mealtype
+
+Filter Page:
+-> post Location
+-> post Cuisine
+-> post Cost:
+    - Upper Value
+    -Lower Value
+-> post Sort
+-> post Pagination
+-> get MealtypeById
+
+Reataurants Details Page:
+-> get MenuByRestaurantId
+-> getRestauratnById
+
+-> post UserDetails
+-> post OrderDetails
+
+-> PaymentGateway
+
+-> Order By User
+-> Order Details by Restaurant Id
