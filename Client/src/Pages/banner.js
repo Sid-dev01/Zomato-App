@@ -5,6 +5,8 @@ class Banner extends React.Component {
 
     render() {
 
+        const { locationData } = this.props;
+
         return(
 
             <div>
@@ -23,22 +25,19 @@ class Banner extends React.Component {
                         <h3 className="find-the">Find the best restaurants, cafés, and bars</h3>
                         <div className="search-box">
                         <select name="location" id="location">
-                            <option value="" className="location-place">
+                            <option value="0" disabled selected>
                             Please type a location
                             </option>
-                            <option value="" className="location-place">
-                            Sarjapur Road, Bengaluru
-                            </option>
-                            <option value="" className="location-place">
-                            HSR Layout, Bengaluru
-                            </option>
-                            <option value="" className="location-place">
-                            Karmangala, Bengaluru
-                            </option>
-                            <option value="" className="location-place">
-                            Jay Nagar, Bengaluru
-                            </option>
-                            <option value="" className="location-place"></option>
+                            {
+                                locationData?.map((item) => {
+                                    return(
+                                        <option value={item.city_id} className="location-place"> {item.name} </option>
+                                    )
+                                    
+                                }) 
+                            }
+                            
+                            
                         </select>
 
                         <i className="bi bi-search search-glass"></i>

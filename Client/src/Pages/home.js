@@ -10,7 +10,8 @@ class Homepage extends React.Component {
     constructor() {
         super();
         this.state = {
-            loc : []
+            loc : [],
+            mealtype: []
         }
     }
 
@@ -26,11 +27,24 @@ class Homepage extends React.Component {
         })
         .catch((err => console.log(err)));
 
+        axios({
+            url: "http://localhost:5500/mealtype",
+            method: "GET",
+            headers: {'Content-Type': 'application/JSON'}
+        })
+        .then(res => {
+            this.setState({ mealtype : res.data.mealtype});
+        })
+        .catch(err => {
+            console.log(err);
+        })
+
     }
 
     render() {
         
-        const { loc } = this.state;
+        const { loc, mealtype} = this.state;
+        // console.log(mealtype);
 
         return(
             <div>
@@ -38,7 +52,7 @@ class Homepage extends React.Component {
                     <Banner locationData = { loc }/>
 
                     {/*<!-- Middle Part -->*/}
-                    <QuickSearch />
+                    <QuickSearch mealtypeData = { mealtype }/>
                 
             </div>
         )

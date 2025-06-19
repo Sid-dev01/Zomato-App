@@ -6,7 +6,7 @@ exports.getLocation = (req, res) => {
     .then(response =>{
         res.status(200).json({
             message: "Location fetched successfully",
-            Location: response
+            location: response
         })
     })
     .catch(err => {
@@ -21,7 +21,7 @@ exports.getLocationById = (req, res) => {
     .then(data => {
         res.status(200).json({
             message: "Location fetched successfully by city id.",
-            Location: data
+            location: data
         })
     })
     .catch(err => {
