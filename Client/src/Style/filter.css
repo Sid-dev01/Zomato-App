@@ -1,0 +1,89 @@
+*{
+    margin:0px;
+    font-family:"Poppins" !important;
+    padding:0px;
+}
+
+.div-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    width: 100%;
+    background-color: #CE0505;
+    box-sizing: border-box;
+}
+
+.div-logo{
+    color: #EB2929;
+    border-radius:50%;
+    font-size:x-large;
+    margin-top:10px;
+    margin-left:5%;
+}
+
+.text{
+    border-radius:50%;
+    background-color:#FFFFFF;
+    padding: 0px 8px;
+}
+
+.div-account{
+    width:100%;
+    display:flex;
+    justify-content:end;
+    margin-right:5%;
+}
+
+.div-login{
+    margin-right:8%;
+}
+
+.login-button{
+    margin-right:10px;
+    padding: 2px 8px;
+    border:none;
+    color: #FFFFFF;
+    cursor:pointer;
+    background:transparent;
+}
+
+.create-id{
+    padding:2px 8px;
+    border-radius:4px;
+    background: transparent;
+    border-color:#FFFFFF;
+    color:#FFFFFF;
+    padding:10px 12px;
+}
+
+/* Heading  */
+.div-heading{
+    font-size:30px;
+    color: #192F60;
+    margin: 25px 70px;
+}
+/* filter css  */
+
+.div-filter{
+    margin:0px 3rem;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+
+.filter-section{
+    width:30%;
+    margin-right:3rem;
+}
+
+label{
+    margin-bottom:5px;
+}
+
+.cost{
+    margin-top:20px;
+}
+
+.sort{
+    margin-top:20px;
+}
