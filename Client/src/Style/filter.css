@@ -2,6 +2,7 @@
     margin:0px;
     font-family:"Poppins" !important;
     padding:0px;
+    height:100%vh;
 }
 
 .div-nav{
@@ -65,25 +66,80 @@
 /* filter css  */
 
 .div-filter{
-    margin:0px 3rem;
+    margin:0px 4rem;
     display:flex;
     justify-content:flex-start;
-    align-items:center;
 }
 
 .filter-section{
-    width:30%;
-    margin-right:3rem;
+    width:20%;
+    margin-right:2rem;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 0.5rem 1.5rem
+}
+
+.filters-text{
+    color:#192F60;
+    font-size:larger;
+    font-style:bold;
 }
 
 label{
     margin-bottom:5px;
+    color: #8C96AB;
 }
 
 .cost{
     margin-top:20px;
+    color:#192F60;
 }
 
 .sort{
     margin-top:20px;
+    color: #192F60;
+}
+
+/* Card CSS  */
+.div-card{
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.card{
+    box-shadow: 0px 3px 6px #00000029;
+    padding-right:40rem;
+    overflow: visible;
+}
+
+.restaurantDetail{
+    display:flex;
+    padding: 1rem 0rem 2rem 2rem;
+    width:100%;
+    height:150px;
+    white-space:nowrap;
+    margin-bottom:1rem;
+}
+
+.order-detail{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;  
+    white-space:nowrap;
+    padding: 0rem 2rem;
+}
+
+.div-data{
+    display: flex;
+    white-space:nowrap;
+    width:100%;
+    justify-content:space-around;
+}
+
+.div-pagination{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    padding-left:15rem;
 }
